@@ -1,0 +1,47 @@
+//
+//  PrefixHeader.pch
+//  Yanker1.0
+//
+//  Created by Guo Nice on 16/4/29.
+//  Copyright © 2016年 Bathroom. All rights reserved.
+// com.Bathroom.Yanker1-0
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "TodayViewController.h"
+
+#import <AVOSCloud.h>//登录注册需要的框架
+#import <UMSocial.h>//友盟社会化分享
+#import <MBProgressHUD.h>
+#import <Masonry.h>
+
+
+
+/**********************************            model    ******************************/
+#import "CurrentUserInfo.h"//储存用户信息的
+#import "UserDataModel.h"
+
+/**********************************            helper    ******************************/
+#import "DataManager.h"
+
+
+
+#import "LoginViewController.h"//登录界面
+#import "FillDataViewController.h"//填写资料界面
+#import "DataStatisticsViewController.h"
+#import "UIImageView+WebCache.h"//SDWebImage头文件
+
+#define kWidth [UIScreen mainScreen].bounds.size.width//宽
+#define kHeight [UIScreen mainScreen].bounds.size.height//高
+
+#import "RankCell.h"
+#import "RankViewController.h"
+#import "MeViewController.h"//设置
+
+#define kColor [UIColor colorWithRed:67/255.0 green:77/255.0 blue:105/255.0 alpha:1.0]
+
+
+
+#endif /* PrefixHeader_pch */

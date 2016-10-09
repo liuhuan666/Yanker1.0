@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonInfoTableViewCell" rowHeight="172" id="KGk-i7-Jjw" customClass="PersonInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="517" height="172"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="517" height="171"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iP9-1H-eW0">
+                        <rect key="frame" x="5" y="5" width="161" height="161"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="iP9-1H-eW0" secondAttribute="height" id="b4A-hJ-LPM"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="3o0-s1-0ps">
+                        <rect key="frame" x="497" y="81" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="3o0-s1-0ps" secondAttribute="height" multiplier="1:1" id="Iw8-Z4-0rp"/>
+                            <constraint firstAttribute="width" constant="10" id="omZ-M8-k4Z"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZ8-qj-EeU">
+                        <rect key="frame" x="176" y="75" width="165" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="iP9-1H-eW0" secondAttribute="bottom" constant="5" id="2gv-HX-9fp"/>
+                    <constraint firstItem="BZ8-qj-EeU" firstAttribute="centerY" secondItem="iP9-1H-eW0" secondAttribute="centerY" id="GiC-eD-aq2"/>
+                    <constraint firstItem="iP9-1H-eW0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="TNk-PP-ei1"/>
+                    <constraint firstItem="BZ8-qj-EeU" firstAttribute="leading" secondItem="iP9-1H-eW0" secondAttribute="trailing" constant="10" id="XFQ-Xb-HSM"/>
+                    <constraint firstItem="iP9-1H-eW0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="nRk-j5-AvX"/>
+                    <constraint firstAttribute="trailing" secondItem="3o0-s1-0ps" secondAttribute="trailing" constant="10" id="rLS-sC-uR4"/>
+                    <constraint firstItem="BZ8-qj-EeU" firstAttribute="baseline" secondItem="iP9-1H-eW0" secondAttribute="baseline" id="xAL-ko-co3"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="xAL-ko-co3"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="3o0-s1-0ps" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="f5W-Te-qts"/>
+            </constraints>
+            <connections>
+                <outlet property="headImagView" destination="iP9-1H-eW0" id="qkk-S5-NiM"/>
+                <outlet property="titleLable" destination="BZ8-qj-EeU" id="Mb4-WR-NaW"/>
+            </connections>
+            <point key="canvasLocation" x="292.5" y="426"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Arrow_right" width="12" height="22"/>
+    </resources>
+</document>

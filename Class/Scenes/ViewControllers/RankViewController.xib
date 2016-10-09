@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RankViewController">
+            <connections>
+                <outlet property="blurView" destination="jwU-I9-OVd" id="DZN-Da-PIV"/>
+                <outlet property="effectView" destination="5Fg-QH-4TU" id="XON-O7-TSr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Fg-QH-4TU">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jwU-I9-OVd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="extraLight"/>
+                </visualEffectView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5Fg-QH-4TU" secondAttribute="bottom" id="SBs-LR-Bn6"/>
+                <constraint firstItem="5Fg-QH-4TU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oVE-gk-VkA"/>
+                <constraint firstAttribute="trailing" secondItem="5Fg-QH-4TU" secondAttribute="trailing" id="owZ-Gj-m5A"/>
+                <constraint firstItem="5Fg-QH-4TU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zDZ-lY-WRT"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

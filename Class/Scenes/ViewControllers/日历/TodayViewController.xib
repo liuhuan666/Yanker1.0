@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TodayViewController">
+            <connections>
+                <outlet property="beyoudtipLabel" destination="CMn-Vp-09j" id="zQc-CV-iFP"/>
+                <outlet property="contentView" destination="EMR-ac-mcz" id="oah-Zk-fX9"/>
+                <outlet property="daysLabel" destination="A36-p2-VLH" id="DTj-gU-1TO"/>
+                <outlet property="goalsLabel" destination="UvY-hW-AYd" id="Bki-aV-VAK"/>
+                <outlet property="progressBar" destination="Hns-HI-bYD" id="QcV-ze-IKN"/>
+                <outlet property="scrollView" destination="bVR-s3-2L9" id="jQM-lX-oT6"/>
+                <outlet property="smokeBtn" destination="Ggc-5i-6eo" id="DoK-YB-kB0"/>
+                <outlet property="view" destination="KZu-mk-aaM" id="MbS-tr-Fyk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="KZu-mk-aaM">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVR-s3-2L9">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMR-ac-mcz" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IuM-bK-glf" userLabel="BillBoard">
+                                    <rect key="frame" x="100" y="94" width="400" height="200"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A36-p2-VLH">
+                                            <rect key="frame" x="8" y="8" width="384" height="70"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="70" id="yJj-L9-SRj"/>
+                                            </constraints>
+                                            <attributedString key="attributedText">
+                                                <fragment content="第7天">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="48" name="STHeitiSC-Light"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvY-hW-AYd">
+                                            <rect key="frame" x="8" y="99" width="392" height="40"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="烟克目标：10支">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="23" name="STHeitiSC-Light"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="UvY-hW-AYd" secondAttribute="bottom" constant="61" id="7Tp-Fz-eHm"/>
+                                        <constraint firstItem="UvY-hW-AYd" firstAttribute="leading" secondItem="IuM-bK-glf" secondAttribute="leading" constant="8" id="BCc-VS-3ct"/>
+                                        <constraint firstAttribute="trailing" secondItem="UvY-hW-AYd" secondAttribute="trailing" id="Cm2-Uq-lGR"/>
+                                        <constraint firstItem="UvY-hW-AYd" firstAttribute="top" secondItem="A36-p2-VLH" secondAttribute="bottom" constant="21" id="MFi-JT-H3r"/>
+                                        <constraint firstItem="A36-p2-VLH" firstAttribute="leading" secondItem="IuM-bK-glf" secondAttribute="leading" constant="8" id="cg5-SX-YHa"/>
+                                        <constraint firstAttribute="trailing" secondItem="A36-p2-VLH" secondAttribute="trailing" constant="8" id="r1X-E1-x9v"/>
+                                        <constraint firstItem="A36-p2-VLH" firstAttribute="top" secondItem="IuM-bK-glf" secondAttribute="top" constant="8" id="rPE-pk-eqB"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ggc-5i-6eo">
+                                    <rect key="frame" x="250" y="420" width="100" height="100"/>
+                                    <color key="backgroundColor" red="1" green="0.82814665210000005" blue="0.31769173179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="100" id="856-Ye-x3a"/>
+                                        <constraint firstAttribute="width" constant="100" id="gkB-PV-rej"/>
+                                    </constraints>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <size key="titleShadowOffset" width="10" height="10"/>
+                                    <state key="normal">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="吸取一支">
+                                                <attributes>
+                                                    <font key="NSFont" size="15" name="PingFangSC-Thin"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </state>
+                                    <connections>
+                                        <action selector="smokeAdd:" destination="-1" eventType="touchUpInside" id="UbG-qD-b6X"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hns-HI-bYD" userLabel="progressBar">
+                                    <rect key="frame" x="180" y="270" width="240" height="60"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMn-Vp-09j">
+                                    <rect key="frame" x="0.0" y="64" width="600" height="22"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="你知不知道已经抽爆表了？">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="12" name="PingFangSC-Light"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.23330639470950254" green="1" blue="0.90232317955329489" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="IuM-bK-glf" firstAttribute="height" secondItem="EMR-ac-mcz" secondAttribute="height" multiplier="1:6" id="Ci1-dC-Khi"/>
+                                <constraint firstItem="CMn-Vp-09j" firstAttribute="leading" secondItem="EMR-ac-mcz" secondAttribute="leading" id="GxH-BY-Vve"/>
+                                <constraint firstItem="IuM-bK-glf" firstAttribute="top" secondItem="CMn-Vp-09j" secondAttribute="bottom" constant="8" id="JVa-Sa-GvU"/>
+                                <constraint firstItem="IuM-bK-glf" firstAttribute="top" secondItem="EMR-ac-mcz" secondAttribute="top" constant="94" id="JtM-6T-ize"/>
+                                <constraint firstItem="IuM-bK-glf" firstAttribute="centerX" secondItem="EMR-ac-mcz" secondAttribute="centerX" id="M4h-5n-cjC"/>
+                                <constraint firstItem="IuM-bK-glf" firstAttribute="width" secondItem="EMR-ac-mcz" secondAttribute="width" multiplier="2:3" id="WNG-He-qha"/>
+                                <constraint firstItem="Ggc-5i-6eo" firstAttribute="centerX" secondItem="EMR-ac-mcz" secondAttribute="centerX" id="YvA-Gh-Cyw"/>
+                                <constraint firstItem="CMn-Vp-09j" firstAttribute="top" secondItem="EMR-ac-mcz" secondAttribute="top" constant="64" id="t9G-ct-Afg"/>
+                                <constraint firstAttribute="trailing" secondItem="CMn-Vp-09j" secondAttribute="trailing" id="u9N-RV-nsV"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="EMR-ac-mcz" firstAttribute="centerX" secondItem="bVR-s3-2L9" secondAttribute="centerX" id="6CK-hi-Hwy"/>
+                        <constraint firstItem="Hns-HI-bYD" firstAttribute="width" secondItem="bVR-s3-2L9" secondAttribute="width" multiplier="1:2.5" id="Ex9-ur-Ylj"/>
+                        <constraint firstAttribute="trailing" secondItem="EMR-ac-mcz" secondAttribute="trailing" id="NbL-TB-5Zz"/>
+                        <constraint firstItem="Hns-HI-bYD" firstAttribute="centerX" secondItem="bVR-s3-2L9" secondAttribute="centerX" id="ObF-Lc-WVr"/>
+                        <constraint firstAttribute="bottom" secondItem="EMR-ac-mcz" secondAttribute="bottom" id="Z9m-NS-4lY"/>
+                        <constraint firstItem="EMR-ac-mcz" firstAttribute="leading" secondItem="bVR-s3-2L9" secondAttribute="leading" id="Zfh-Da-xmv"/>
+                        <constraint firstItem="EMR-ac-mcz" firstAttribute="height" secondItem="bVR-s3-2L9" secondAttribute="height" multiplier="2" id="hJT-ux-mgG"/>
+                        <constraint firstItem="EMR-ac-mcz" firstAttribute="top" secondItem="bVR-s3-2L9" secondAttribute="top" id="jH9-9Y-YYI"/>
+                        <constraint firstItem="Hns-HI-bYD" firstAttribute="centerY" secondItem="bVR-s3-2L9" secondAttribute="centerY" id="oMF-Hu-ufr"/>
+                        <constraint firstItem="Hns-HI-bYD" firstAttribute="height" secondItem="bVR-s3-2L9" secondAttribute="height" multiplier="1:10" id="pxk-11-cb2"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="doF-Yr-s2Y"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bVR-s3-2L9" secondAttribute="bottom" id="7Tx-Lb-ZCE"/>
+                <constraint firstAttribute="trailing" secondItem="bVR-s3-2L9" secondAttribute="trailing" id="KM8-Ax-1tI"/>
+                <constraint firstItem="bVR-s3-2L9" firstAttribute="top" secondItem="KZu-mk-aaM" secondAttribute="top" id="dmh-3D-dDb"/>
+                <constraint firstAttribute="bottom" secondItem="Ggc-5i-6eo" secondAttribute="bottom" constant="80" id="hBv-4D-AHe"/>
+                <constraint firstItem="bVR-s3-2L9" firstAttribute="leading" secondItem="KZu-mk-aaM" secondAttribute="leading" id="yr7-q0-GQc"/>
+            </constraints>
+            <point key="canvasLocation" x="329" y="212"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="loginCell" rowHeight="194" id="THc-mr-ZAt" customClass="loginCell">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="194"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="THc-mr-ZAt" id="zdR-qr-qzv">
+                <rect key="frame" x="0.0" y="0.0" width="428" height="193"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFz-iG-yK8">
+                        <rect key="frame" x="193" y="5" width="42" height="183"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="WFz-iG-yK8" secondAttribute="bottom" constant="5" id="7ht-Vy-o1A"/>
+                    <constraint firstItem="WFz-iG-yK8" firstAttribute="top" secondItem="zdR-qr-qzv" secondAttribute="top" constant="5" id="LKd-aa-1Rg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="WFz-iG-yK8" firstAttribute="centerX" secondItem="THc-mr-ZAt" secondAttribute="centerX" id="LyN-MV-RuB"/>
+            </constraints>
+            <connections>
+                <outlet property="loginLable" destination="WFz-iG-yK8" id="LYF-ry-NkJ"/>
+            </connections>
+            <point key="canvasLocation" x="328" y="410"/>
+        </tableViewCell>
+    </objects>
+</document>
